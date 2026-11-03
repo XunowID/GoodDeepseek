@@ -1,0 +1,31 @@
+{
+  "name": "konteksflow",
+  "version": "2.0.0",
+  "author": "XunowID",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XunowID/KonteksFlow.git"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node build.js",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "sharp": "^0.35.2",
+    "svelte": "^5.28.2",
+    "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "docx": "^9.15.1",
+    "pptxgenjs": "^4.0.1"
+  },
+  "overrides": {
+    "pptxgenjs": {
+      "image-size": "2.0.4"
+    }
+  }
+}

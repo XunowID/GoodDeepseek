@@ -1,0 +1,1058 @@
+{
+  "updatedAt": "2026-10-29T00:00:00Z",
+  "messages": {
+    "common": {
+      "save": "Simpan",
+      "cancel": "Batal",
+      "delete": "Hapus",
+      "edit": "Edit",
+      "close": "Tutup",
+      "back": "Kembali",
+      "export": "Ekspor",
+      "import": "Impor",
+      "refresh": "Muat ulang",
+      "download": "Unduh",
+      "name": "Nama",
+      "content": "Isi",
+      "description": "Keterangan",
+      "none": "Tidak ada",
+      "working": "Memproses?",
+      "add": "Tambah"
+    },
+    "drawer": {
+      "title": "Memori DeepSeek",
+      "close": "Menutup",
+      "github": "GitHub",
+      "version": "v{{version}}",
+      "exportAll": "Ekspor Semua Data",
+      "importAll": "Impor Semua Data",
+      "exportEncrypt": "Lindungi dengan kata sandi (disarankan)",
+      "enterPassword": "Masukkan kata sandi",
+      "confirmPassword": "Konfirmasikan kata sandi",
+      "passwordTooShort": "Kata sandi minimal harus 4 karakter.",
+      "passwordMismatch": "Kata sandi tidak cocok.",
+      "passwordRequired": "Kata sandi diperlukan.",
+      "passwordWrong": "Kata sandi salah.",
+      "exportDone": "Data berhasil diekspor.",
+      "exportFailed": "Gagal mengekspor data.",
+      "exporting": "Mengekspor...",
+      "importing": "Pengimporan...",
+      "download": "Unduh",
+      "decrypt": "Dekripsi",
+      "selectSections": "Pilih bagian yang akan diimpor:",
+      "importBtn": "Impor",
+      "importParseError": "Format berkas tidak valid.",
+      "importDone": "Data berhasil diimpor.",
+      "importFailed": "Gagal mengimpor data.",
+      "importPasswordPlaceholder": "Masukkan kata sandi ekspor",
+      "sectionSettings": "Pengaturan",
+      "sectionPrompts": "Perintah Sistem Kustom",
+      "sectionSkills": "Keahlian",
+      "sectionCharacters": "Karakter RP",
+      "sectionMemories": "Kenangan Tersimpan",
+      "sectionProjects": "Proyek",
+      "sectionProjectFiles": "File Proyek",
+      "sectionChatTags": "Tag Obrolan",
+      "sectionSavedItems": "Item Tersimpan"
+    },
+    "settings": {
+      "generalSettings": "Pengaturan Umum",
+      "systemPrompts": "Perintah Sistem",
+      "defaultPromptName": "Bawaan (Tersembunyi)",
+      "defaultPromptStatus": "Instruksi inti hanya-baca",
+      "customPromptStatus": "Perintah tersimpan khusus",
+      "view": "Melihat",
+      "edit": "Sunting",
+      "delete": "Menghapus",
+      "addNewPrompt": "Tambahkan Prompt Sistem Baru",
+      "addNewTitle": "Tambahkan Perintah Baru",
+      "viewTitle": "Lihat Perintah",
+      "editTitle": "Sunting Perintah",
+      "nameLabel": "Nama",
+      "namePlaceholder": "misalnya Aturan Khusus Saya",
+      "contentLabel": "Isi",
+      "contentPlaceholder": "Instruksi sistem di sini...",
+      "baseOnDefault": "Berdasarkan Default",
+      "cancel": "Membatalkan",
+      "savePrompt": "Simpan Perintah",
+      "nameRequired": "Nama dan konten diperlukan.",
+      "settingsSaved": "Pengaturan disimpan.",
+      "advancedSettings": "Pengaturan Lanjutan",
+      "projectAutoContext": "Konteks Otomatis Proyek (RAG Lokal)",
+      "processGitignore": "Proses .gitignore saat mengunggah",
+      "autoDownloadFiles": "Unduh otomatis keluaran create_file",
+      "disableSystemPrompt": "Nonaktifkan Prompt Sistem Tersembunyi",
+      "disableMemory": "Nonaktifkan Injeksi Memori Tersimpan",
+      "disableMemoryHint": "Saat aktif, memori yang disimpan tidak dimasukkan ke dalam prompt. Skill masih berfungsi normal.",
+      "persistentMemory": "Memori Persisten",
+      "persistentMemoryHint": "Saat aktif, memori yang relevan disertakan dalam pesan yang dikirim ke DeepSeek.",
+      "dataTransferHint": "Memori dan pengaturan tersimpan di browser Anda. Saat digunakan, memori terpilih dan cuplikan folder yang Anda hubungkan dikirim ke DeepSeek sebagai konteks pesan. Periksa isi folder sebelum menghubungkannya.",
+      "injectSystemDateTime": "Masukkan tanggal & waktu sistem ke dalam pesan",
+      "skipDeletionConfirmation": "Lewati konfirmasi penghapusan",
+      "injectionFrequency": "Frekuensi Injeksi Perintah Sistem",
+      "firstMessage": "Hanya pada pesan pertama",
+      "everyMessage": "Selalu (setiap pesan)",
+      "everyNMessages": "Setiap N pesan",
+      "injectionInterval": "Interval Injeksi (N)",
+      "injectEveryN": "Suntikkan prompt setiap pesan {{n}}.",
+      "voiceMode": "Mode Suara (Respon baca otomatis)",
+      "autoSubmitVoice": "Kirim otomatis setelah pidato",
+      "speechLanguage": "Bahasa Pidato",
+      "vadSilenceTimeout": "Batas waktu hening",
+      "autoDownloadZip": "Unduh otomatis LONG_WORK zip",
+      "preferredLang": "Bahasa Respon Pilihan",
+      "preferredLangPlaceholder": "misalnya Inggris, Turki, Bajak Laut",
+      "preferredLangHint": "Biarkan kosong agar model dapat memutuskan.",
+      "markdownMaxDepth": "Kedalaman Maks Penurunan Harga Walker",
+      "markdownMaxDepthHint": "Batasan ketat pada kedalaman rekursi DOM saat merekonstruksi penurunan harga dari sebuah pesan. Lebih rendah = lebih aman terhadap stack overflow pada konten yang sangat bersarang; lebih tinggi = mempertahankan struktur pesan yang bersarang secara patologis. Standarnya 200.",
+      "chatSessionCap": "Batas Daftar Sesi Obrolan",
+      "chatSessionCapHint": "Jumlah maksimum sesi obrolan yang disimpan dalam memori untuk sidebar. Sesi lama yang melampaui batas ini akan dikeluarkan (FIFO). Nilai yang lebih rendah mengurangi penggunaan memori pada tab yang berumur panjang. Standarnya 500.",
+      "githubToken": "Token Akses Pribadi GitHub",
+      "githubTokenPlaceholder": "ghp_...",
+      "githubTokenHelp": "Buat token klasik dengan cakupan repo di Pengaturan GitHub -> Token.",
+      "githubTokenShow": "Menunjukkan",
+      "githubTokenHide": "Bersembunyi",
+      "githubTokenClear": "Jernih",
+      "tokenPriceEstimation": "Estimasi Harga Token (Eksperimental)",
+      "tokenPriceHint": "Menampilkan perkiraan biaya DeepSeek API per pesan dan total sesi. Harga token input/output digunakan untuk estimasi. Data harga diambil secara dinamis dengan fallback.",
+      "deepResearchContextGuard": "Penjaga Konteks Penelitian Mendalam",
+      "contextGuardEnabled": "Aktifkan Penjaga Konteks",
+      "contextGuardEnabledHint": "Menghentikan Penelitian Mendalam yang dikelola sebelum jendela konteks obrolan habis. Melacak permintaan ekstensi tersembunyi, ringkasan bukti, dan penggunaan yang dilaporkan server.",
+      "contextGuardLimit": "Batas Konteks (token)",
+      "contextGuardLimitHint": "Ukuran jendela konteks obrolan web DeepSeek. Standarnya 128.000 token.",
+      "contextGuardStopPercent": "Hentikan Ambang Batas (%)",
+      "contextGuardStopPercentHint": "Hentikan Penelitian Mendalam ketika perkiraan konteks mencapai token {{threshold}}. Dijepit hingga 50-95%.",
+      "collapseLongUserMessages": "Ciutkan pesan pengguna yang panjang",
+      "collapseLongUserMessagesHint": "Secara otomatis menyembunyikan pesan pengguna yang sangat panjang di balik tombol baca lebih lanjut.",
+      "save": "Simpan Pengaturan",
+      "ragChunks": "Potongan RAG Maks untuk Disuntikkan",
+      "ragChunks3": "3 bagian (~600 kata)",
+      "ragChunks5": "5 potongan (~1000 kata)",
+      "ragChunks8": "8 potongan (~1600 kata)",
+      "ragChunks10": "10 potongan (~2000 kata)",
+      "ragHint": "Secara otomatis mengambil bagian yang relevan dari file proyek Anda.",
+      "projectInstructions": "Instruksi Proyek",
+      "projectInstructionsPlaceholder": "Instruksi khusus ditambahkan ke perintah sistem global untuk proyek ini…",
+      "autoSaved": "Disimpan otomatis",
+      "languageSettings": "Pengaturan Bahasa",
+      "syncLocale": "Sinkronkan bahasa ekstensi dengan browser",
+      "selectLanguage": "Bahasa",
+      "checkUpdates": "Periksa Pembaruan Bahasa",
+      "resetFactory": "Reset ke Bahasa Pabrik",
+      "lastChecked": "Terakhir diperiksa: {{date}}",
+      "updateAvailable": "Pembaruan bahasa tersedia!",
+      "updatedSuccess": "File bahasa berhasil diperbarui.",
+      "resetSuccess": "File bahasa diatur ulang ke default pabrik.",
+      "updateFailed": "Gagal memeriksa pembaruan bahasa.",
+      "unsavedTitle": "Perubahan yang Belum Disimpan",
+      "unsavedMessage": "Anda memiliki perubahan pengaturan yang belum disimpan. Apakah Anda yakin ingin membuangnya?",
+      "discard": "Membuang",
+      "keepEditing": "Terus Mengedit",
+      "customCSS": "CSS khusus",
+      "customCSSPlaceholder": "/* Paste your CSS overrides here or pick a preset above */",
+      "multiPromptMode": "Mode Prompt Multi-Sistem (Lanjutan)",
+      "scheduleType": "Jadwal Injeksi",
+      "enabled": "Diaktifkan",
+      "cssPresets": "Preset",
+      "presetNone": "Tidak ada",
+      "presetReducePadding": "Kurangi Bantalan Obrolan",
+      "presetWiderMessages": "Pesan yang Lebih Luas",
+      "presetCompact": "UI ringkas",
+      "presetBetterCodeFont": "Font Kode yang Lebih Baik",
+      "saveAsSnippet": "Simpan sebagai Cuplikan",
+      "manageSnippets": "Kelola Cuplikan CSS",
+      "restore": "Memulihkan",
+      "enterSnippetName": "Masukkan nama cuplikan:",
+      "snippetSaved": "Cuplikan disimpan!",
+      "snippetDeleted": "Cuplikan dihapus",
+      "presetRestored": "Preset dikembalikan ke default",
+      "duplicateNameError": "Cuplikan dengan nama ini sudah ada.",
+      "updateSnippet": "Perbarui Cuplikan",
+      "snippetUpdated": "Cuplikan diperbarui!",
+      "editingSnippet": "Mengedit cuplikan: {{name}}",
+      "exitEditMode": "Keluar dari Mode Edit",
+      "noSnippets": "Belum ada cuplikan CSS."
+    },
+    "skillList": {
+      "title": "Keahlian",
+      "export": "Ekspor",
+      "import": "Impor",
+      "uploadLabel": "Keterampilan Unggah (.md)",
+      "empty": "Tidak ada keterampilan yang dimuat.",
+      "namePlaceholder": "Nama Keterampilan",
+      "usagePlaceholder": "Penggunaan (misalnya skrip ketikan, reaksi)",
+      "contentPlaceholder": "Persona/instruksi keterampilan...",
+      "cancel": "Membatalkan",
+      "save": "Menyimpan",
+      "edit": "Sunting",
+      "delete": "Menghapus",
+      "onlyMdOrJson": "Hanya file .md dan .json yang didukung untuk keterampilan.",
+      "onlyMd": "Hanya file .md yang didukung untuk keterampilan.",
+      "loaded": "Keterampilan dimuat: {{name}}",
+      "removed": "Keterampilan dihapus.",
+      "saved": "Keterampilan disimpan.",
+      "importedCount": "Keterampilan {{count}} diimpor.",
+      "importFailed": "Gagal mengimpor keterampilan. Format berkas tidak valid.",
+      "urlLabel": "Impor dari URL (GitHub, README, dll.)",
+      "urlPlaceholder": "https://github.com/user/repo or any URL with skill content",
+      "urlFetch": "Mengambil",
+      "urlFetching": "Mengambil...",
+      "urlEmpty": "Silakan masukkan URL.",
+      "urlInvalid": "Silakan masukkan URL yang valid.",
+      "urlFetchFailed": "Gagal mengambil URL.",
+      "urlEmptyContent": "URL mengembalikan konten kosong.",
+      "urlImported": "Keterampilan yang diimpor: {{name}}",
+      "autoTitle": "Skill Otomatis",
+      "autoHint": "Jika aktif, semua skill aktif yang cocok dengan pesan akan digunakan. Isi nama dan kata kunci Usage agar pemilihan lebih tepat.",
+      "count": "{{total}} skill · {{active}} aktif",
+      "searchPlaceholder": "Cari skill berdasarkan nama atau kegunaan...",
+      "noSearchResults": "Tidak ada skill yang cocok dengan pencarian.",
+      "autoInstallTitle": "Pasang skill otomatis",
+      "autoInstallHint": "Izinkan ekstensi mencari SKILL.md publik di GitHub dan memasang kecocokan terbaik saat kamu meminta cari sekaligus pasang. Izin GitHub diminta sekali; skill langsung aktif.",
+      "autoInstallPermissionDenied": "Izin GitHub tidak diberikan; pemasangan otomatis tidak diaktifkan."
+    },
+    "characterList": {
+      "title": "Karakter RP",
+      "export": "Ekspor",
+      "import": "Impor",
+      "uploadLabel": "Unggah Persona (.md)",
+      "defaultOption": "Tidak ada (Asisten)",
+      "empty": "Tidak ada persona yang disimpan.",
+      "namePlaceholder": "Nama Karakter",
+      "usagePlaceholder": "Penggunaan (misalnya kesenangan, filosofi)",
+      "contentPlaceholder": "Instruksi karakter/latar belakang...",
+      "cancel": "Membatalkan",
+      "save": "Menyimpan",
+      "edit": "Sunting",
+      "delete": "Menghapus",
+      "onlyMdOrJson": "Hanya file .md dan .json yang didukung untuk persona.",
+      "onlyMd": "Hanya file .md yang didukung untuk unggahan persona.",
+      "loaded": "Karakter dimuat: {{name}}",
+      "removed": "Karakter dihapus.",
+      "saved": "Karakter disimpan.",
+      "importedCount": "Persona {{count}} diimpor.",
+      "importFailed": "Gagal mengimpor persona. Format berkas tidak valid."
+    },
+    "memoryList": {
+      "title": "Memori Tersimpan",
+      "export": "Ekspor",
+      "import": "Impor",
+      "empty": "Belum ada entri memori.",
+      "delete": "Hapus",
+      "edit": "Edit",
+      "editTitle": "Sunting Memori",
+      "saved": "Memori disimpan: {{key}}",
+      "importSuccess": "Memori berhasil diimpor.",
+      "importFailed": "Impor gagal: kesalahan format JSON.",
+      "deleted": "Memori dihapus: {{key}}",
+      "more": "+{{count}} lagi",
+      "searchPlaceholder": "Cari memori berdasarkan nama atau isi?",
+      "noMatches": "Tidak ada memori yang cocok."
+    },
+    "memoryImport": {
+      "title": "Impor Memori dari AI Lain",
+      "step1Title": "1. Salin perintah & tempel ke AI lain",
+      "copyPrompt": "Menyalin",
+      "copied": "Disalin!",
+      "step2Title": "2. Tempel respons AI di bawah",
+      "placeholder": "Tempel respons AI di sini...",
+      "importButton": "Impor & Mulai Sesi Pakar",
+      "importError": "Silakan tempel respons AI terlebih dahulu."
+    },
+    "projectsManager": {
+      "back": "Kembali",
+      "title": "Proyek",
+      "manage": "Kelola Proyek",
+      "newProject": "+ Proyek Baru",
+      "nameRequired": "Nama proyek (wajib)",
+      "descriptionOptional": "Deskripsi (opsional)",
+      "cancel": "Membatalkan",
+      "create": "Membuat",
+      "empty": "Belum ada proyek.",
+      "nameLabel": "Nama",
+      "descriptionLabel": "Keterangan",
+      "optional": "Opsional",
+      "customInstructions": "Instruksi Kustom",
+      "instructionsPlaceholder": "Instruksi ditambahkan ke prompt sistem global ketika proyek ini aktif...",
+      "autoSaved": "Disimpan otomatis",
+      "files": "File",
+      "exportAll": "Ekspor Semua",
+      "noFiles": "Belum ada file yang ditambahkan.",
+      "export": "Ekspor",
+      "delete": "Menghapus",
+      "uploadFile": "+ Unggah Berkas",
+      "uploadFolder": "+ Unggah Folder",
+      "fileHint": "Hanya file teks biasa. Maks 500 KB per file.",
+      "localDirectory": "Direktori Lokal",
+      "permissionLost": "(izin hilang — tautkan ulang)",
+      "refresh": "Menyegarkan",
+      "unlink": "Putuskan tautan",
+      "linkDirectory": "+ Tautkan Direktori Lokal",
+      "selectingDir": "Memilih direktori...",
+      "dirHint": "File dibaca langsung dari sistem file Anda (tidak disalin). Hanya browser berbasis Chromium.",
+      "deleteProject": "Hapus Proyek",
+      "nameIsRequired": "Nama wajib diisi.",
+      "filePickFailed": "Pengambilan berkas gagal.",
+      "fileTooLarge": "\"{{name}}\" terlalu besar ({{size}} KB)",
+      "fileUnreadable": "Tidak dapat membaca \"{{name}}\"",
+      "fileEmpty": "\"{{name}}\" kosong",
+      "storageError": "Kesalahan penyimpanan: {{msg}}",
+      "folderPickFailed": "Pemilihan folder gagal.",
+      "folderRequiresNewer": "Pengunggahan folder memerlukan versi aplikasi yang lebih baru.",
+      "folderUploadFailed": "Gagal mengunggah folder: {{msg}}",
+      "filesUploaded": "File {{count}} diunggah, {{skipped}} dilewati (terlalu besar, tidak dapat dibaca, atau bukan teks).",
+      "linkFailed": "Gagal menautkan direktori.",
+      "refreshFailed": "Gagal menyegarkan direktori.",
+      "downloadAll": "Unduh semua file sebagai satu file teks gabungan",
+      "downloadFile": "Unduh {{name}}",
+      "removeFile": "Hapus {{name}} dari proyek ini",
+      "deleteConfirm": "Hapus \"{{name}}\"? Ini juga akan menghapus file {{count}}-nya.",
+      "filesUploadedShort": "File {{count}} diunggah, {{skipped}} dilewati (terlalu besar atau kosong)."
+    },
+    "projectsCard": {
+      "title": "Proyek",
+      "manage": "Mengelola",
+      "description": "Pilihan proyek & file tersedia di bawah input obrolan."
+    },
+    "selectionOverlay": {
+      "selected": "terpilih",
+      "deselectAll": "Batalkan pilihan Semua",
+      "selectAll": "Pilih Semua",
+      "markdown": "Penurunan harga (.md)",
+      "pdf": "Dokumen PDF",
+      "html": "HTML Interaktif",
+      "image": "Tangkapan Layar Panjang",
+      "cancel": "Membatalkan",
+      "exportHint": "Silakan pilih pesan yang ingin Anda ekspor terlebih dahulu."
+    },
+    "questionPanel": {
+      "of": "{{current}} dari {{total}}",
+      "dismiss": "Membubarkan",
+      "somethingElse": "Sesuatu yang lain...",
+      "typeAnswer": "Ketik jawabanmu di sini...",
+      "keyboardNav": "↑↓ untuk bernavigasi",
+      "keyboardSelect": "Masuk untuk memilih",
+      "keyboardClose": "Esc untuk menutup",
+      "sendAnswers": "Kirim Jawaban",
+      "skip": "Melewati",
+      "next": "Berikutnya",
+      "other": "Lainnya",
+      "noOptionSkipped": "*(Tidak ada opsi yang dipilih / Dilewati)*",
+      "noAnswerSkipped": "*(Tidak ada jawaban yang diberikan / Dilewati)*",
+      "answersHeader": "Berikut adalah jawaban atas pertanyaan klarifikasi Anda:",
+      "noInputField": "Tidak dapat menemukan kolom masukan DeepSeek."
+    },
+    "statusBanner": {
+      "title": "Masalah DeepSeek {{indicator}} terdeteksi | {{description}}",
+      "message": "Masalahnya bukan di pihak Anda, melainkan di pihak DeepSeek. Server mungkin mengalami masalah karena beban atau pemeliharaan yang tinggi."
+    },
+    "announcementBanner": {
+      "dismiss": "Membubarkan"
+    },
+    "attachMenu": {
+      "buttonTitle": "Unggah Lanjutan",
+      "attachProject": "Lampirkan Proyek",
+      "voicePrompt": "Perintah Suara",
+      "stopRecording": "Berhenti Merekam",
+      "uploadFile": "Unggah Berkas",
+      "uploadFolder": "Unggah Folder",
+      "githubRepo": "Repo GitHub",
+      "githubAuthLabel": "Akses GitHub yang diautentikasi",
+      "fetchWebPage": "Ambil Halaman Web",
+      "githubImportTitle": "Impor Repo GitHub",
+      "authenticated": "Diautentikasi",
+      "githubPlaceholder": "https://github.com/owner/repo or owner/repo",
+      "includeCommits": "Sertakan riwayat komit",
+      "commitsLabel": "Jumlah komitmen:",
+      "close": "Menutup",
+      "fetch": "Mengambil",
+      "fetching": "Mengambil...",
+      "projectLabel": "Proyek",
+      "noProject": "Tidak ada",
+      "projectHint": "Instruksi dari proyek yang dipilih hanya berlaku pada pesan pertama.",
+      "deselectAll": "Batalkan pilihan semua",
+      "selectAll": "Pilih semua",
+      "file": "mengajukan",
+      "files": "file",
+      "attach": "Lampirkan ({{count}})",
+      "noFiles": "Tidak ada file — tambahkan melalui Kelola Proyek",
+      "noProjectSelected": "Tidak ada proyek yang dipilih",
+      "webImportTitle": "Ambil Halaman Web",
+      "webPlaceholder": "https://example.com/article",
+      "noSpeechRecognition": "Browser tidak mendukung Pengenalan Ucapan.",
+      "voiceError": "Kesalahan Suara: {{msg}}",
+      "noInputField": "Tidak dapat menemukan kolom masukan.",
+      "filePickFailed": "Pengambilan berkas gagal.",
+      "folderPickFailed": "Pemilihan folder gagal.",
+      "folderRequiresNewer": "Pengunggahan folder memerlukan versi aplikasi yang lebih baru.",
+      "folderUploadFailed": "Gagal mengunggah folder: {{msg}}",
+      "invalidGithubUrl": "URL tidak valid. Gunakan: https://github.com/owner/repo atau owner/repo",
+      "commitsFailed": "Gagal mengambil riwayat penerapan: {{msg}}",
+      "repoFailed": "Gagal mengambil repositori: {{msg}}",
+      "invalidWebUrl": "Silakan masukkan URL yang valid (termasuk http/https).",
+      "webFetchFailed": "Tidak dapat mengambil konten halaman: {{msg}}"
+    },
+    "codeRunner": {
+      "pythonRunner": "Pelari Python",
+      "tsRunner": "Pelari TypeScript",
+      "jsRunner": "Pelari JavaScript",
+      "luaRunner": "Pelari Lua",
+      "rubyRunner": "Pelari Ruby",
+      "download": "Unduh",
+      "placeholder": "Masukkan kode Anda di sini...",
+      "running": "Berlari...",
+      "runPython": "▶ Jalankan Python",
+      "runTs": "▶ Jalankan TS",
+      "runJs": "▶ Jalankan JS",
+      "runLua": "▶ Jalankan Lua",
+      "runRuby": "▶ Jalankan Ruby",
+      "consoleOutput": "Keluaran Konsol",
+      "clear": "Jernih",
+      "noOutput": "(Eksekusi selesai tanpa keluaran)",
+      "loadingPyodide": "Memuat Waktu Proses Pyodide...",
+      "finished": "Selesai.",
+      "executionError": "Kesalahan Eksekusi.",
+      "pythonStatus": "Python 3.x (WASM)",
+      "tsStatus": "Naskah Ketik (Babel)",
+      "jsStatus": "JavaScript (V8)",
+      "luaStatus": "Lua (Fengari)",
+      "rubyStatus": "Ruby (Opal)"
+    },
+    "autoCodeResult": {
+      "success": "Eksekusi Berhasil",
+      "rejected": "Permintaan Ditolak",
+      "failed": "Eksekusi Gagal",
+      "completed": "Eksekusi kode {{lang}} berhasil diselesaikan",
+      "wasRejected": "Eksekusi kode {{lang}} ditolak",
+      "execFailed": "Eksekusi kode {{lang}} gagal",
+      "hideOutput": "Sembunyikan Keluaran ▴",
+      "showOutput": "Tampilkan Keluaran ▾"
+    },
+    "searchResult": {
+      "searching": "Mencari DuckDuckGo...",
+      "resultsFor": "Hasil Pencarian: {{query}}",
+      "resultCount": "Hasil {{count}} ditemukan"
+    },
+    "autoCodeRunner": {
+      "aiWantsToRun": "AI ingin menjalankan kode {{lang}}",
+      "safeSandbox": "Ini akan dijalankan di kotak pasir yang aman.",
+      "runCode": "▶ Jalankan Kode",
+      "reject": "✕ Tolak",
+      "running": "Berlari...",
+      "finished": "Selesai",
+      "runAgain": "Jalankan Lagi",
+      "error": "Kesalahan",
+      "retry": "Mencoba kembali",
+      "rejected": "Ditolak",
+      "actuallyRun": "Sebenarnya, Lari",
+      "hideCode": "Sembunyikan Kode ▴",
+      "showCode": "Tunjukkan Kode ▾",
+      "consoleOutput": "Keluaran Konsol"
+    },
+    "toolCard": {
+      "pythonRunner": "Pelari Python"
+    },
+    "downloadCard": {
+      "download": "Unduh"
+    },
+    "pptxCard": {
+      "title": "Presentasi PowerPoint",
+      "download": "Unduh",
+      "working": "Bekerja...",
+      "showScript": "Tampilkan skrip yang dihasilkan",
+      "hideScript": "Sembunyikan skrip yang dihasilkan",
+      "preparing": "Mempersiapkan kotak pasir...",
+      "downloading": "Mengunduh...",
+      "success": "Kesuksesan!",
+      "error": "Kesalahan: {{msg}}",
+      "generating": "Menghasilkan PPTX...",
+      "bridgeError": "Kesalahan Jembatan",
+      "browserUnsupported": "Peramban Anda tidak didukung",
+      "browserUnsupportedDesc": "Kami sedang berupaya mendukung browser Anda. Jika Anda ingin membantu, lihat halaman GitHub kami."
+    },
+    "excelCard": {
+      "title": "Lembar Bentang Excel",
+      "download": "Unduh",
+      "working": "Bekerja...",
+      "showScript": "Tampilkan skrip yang dihasilkan",
+      "hideScript": "Sembunyikan skrip yang dihasilkan",
+      "preparing": "Mempersiapkan kotak pasir...",
+      "downloading": "Mengunduh...",
+      "success": "Kesuksesan!",
+      "error": "Kesalahan: {{msg}}",
+      "generating": "Menghasilkan Excel...",
+      "bridgeError": "Kesalahan Jembatan",
+      "browserUnsupported": "Peramban Anda tidak didukung",
+      "browserUnsupportedDesc": "Kami sedang berupaya mendukung browser Anda. Jika Anda ingin membantu, lihat halaman GitHub kami."
+    },
+    "docxCard": {
+      "title": "Dokumen Kata",
+      "download": "Unduh",
+      "working": "Bekerja...",
+      "showScript": "Tampilkan skrip yang dihasilkan",
+      "hideScript": "Sembunyikan skrip yang dihasilkan",
+      "preparing": "Mempersiapkan kotak pasir...",
+      "downloading": "Mengunduh...",
+      "success": "Kesuksesan!",
+      "error": "Kesalahan: {{msg}}",
+      "generating": "Menghasilkan Dokumen Word...",
+      "bridgeError": "Kesalahan Jembatan",
+      "browserUnsupported": "Peramban Anda tidak didukung",
+      "browserUnsupportedDesc": "Kami sedang berupaya mendukung browser Anda. Jika Anda ingin membantu, lihat halaman GitHub kami."
+    },
+    "visualizerCard": {
+      "title": "visualisasi",
+      "subtitle": "Simulasi Interaktif",
+      "openInPanel": "Buka di Panel"
+    },
+    "previewPanel": {
+      "close": "Menutup",
+      "download": "Unduh .html"
+    },
+    "htmlPreview": {
+      "title": "Pratinjau HTML",
+      "subtitle": "Keluaran interaktif",
+      "downloadHtml": "Unduh .html"
+    },
+    "pptxGenerator": {
+      "title": "Pembuat PowerPoint",
+      "subtitle": "Mesin PPTxGenJS",
+      "heading": "Presentasi PowerPoint",
+      "download": "Unduh",
+      "showScript": "Tampilkan skrip yang dihasilkan",
+      "hideScript": "Sembunyikan skrip",
+      "processing": "Pengolahan...",
+      "done": "Selesai!",
+      "error": "Kesalahan"
+    },
+    "loadingIndicator": {
+      "working": "Bekerja..."
+    },
+    "ragPreview": {
+      "title": "File yang cocok dengan RAG",
+      "moreFiles": "+{{count}} lebih banyak file",
+      "lines": "Garis {{start}}–{{end}}"
+    },
+    "expandToggle": {
+      "expand": "Memperluas",
+      "collapse": "Runtuh",
+      "expandTitle": "Luaskan Kotak Prompt",
+      "collapseTitle": "Ciutkan Kotak Perintah",
+      "showMore": "Tampilkan Lebih Banyak",
+      "showLess": "Tampilkan Lebih Sedikit"
+    },
+    "messageOverlay": {
+      "questionsAsked": "Mengklarifikasi pertanyaan yang diajukan.",
+      "questionsSubtitle": "Silakan berikan jawaban Anda pada panel interaksi di bawah.",
+      "characterCreated": "Karakter/Persona dibuat.",
+      "characterActive": "Karakter aktif: <strong>{{name}}</strong>",
+      "skillCreated": "Keterampilan tercipta.",
+      "skillActive": "Keterampilan aktif: <strong>{{name}}</strong>",
+      "webFetchRequested": "Halaman web sedang diambil",
+      "githubFetchRequested": "Repositori GitHub sedang diambil",
+      "searchRequested": "Mencari DuckDuckGo...",
+      "memoryStored": "Memori tersimpan ({{count}})."
+    },
+    "sidebarMenu": {
+      "tags": "Tag (DSM)",
+      "exportChat": "Ekspor Obrolan (DSM)",
+      "getDsmApp": "Dapatkan Aplikasi DSM",
+      "whatsNew": "Apa yang Baru?"
+    },
+    "savedItems": {
+      "title": "Item Tersimpan",
+      "bookmarks": "Bookmark",
+      "snippets": "Cuplikan",
+      "newSnippet": "Cuplikan Baru",
+      "editSnippet": "Sunting Cuplikan",
+      "search": "Cari item yang disimpan...",
+      "emptyBookmarks": "Belum ada bookmark. Klik ikon bookmark pada pesan apa pun untuk menyimpannya.",
+      "emptySnippets": "Belum ada cuplikan. Buat satu untuk menggunakan kembali perintah favorit Anda.",
+      "delete": "Menghapus",
+      "edit": "Sunting",
+      "send": "Kirim ke obrolan",
+      "removeBookmark": "Hapus penanda",
+      "bookmarkThis": "Tandai pesan ini",
+      "bookmarked": "Pesan ditandai",
+      "bookmarkRemoved": "Penanda dihapus",
+      "deleted": "Dihapus",
+      "snippetSent": "Cuplikan terkirim",
+      "importSuccess": "Barang {{count}} yang diimpor",
+      "importFailed": "Impor gagal: {{msg}}",
+      "namePlaceholder": "Nama cuplikan",
+      "contentPlaceholder": "Tempel perintah atau pesan Anda di sini...",
+      "contentRequired": "Konten diperlukan.",
+      "save": "Menyimpan",
+      "cancel": "Membatalkan",
+      "titleRequired": "Judul diperlukan.",
+      "export": "Ekspor",
+      "import": "Impor",
+      "openConversation": "Percakapan terbuka",
+      "dateJustNow": "baru saja",
+      "dateMinAgo": "{{count}}m yang lalu",
+      "dateHourAgo": "{{count}}h yang lalu"
+    },
+    "sidebarSearch": {
+      "placeholder": "Riwayat pencarian... (#tag)"
+    },
+    "files": {
+      "standalone": {
+        "packageTitle": "Paket file yang dihasilkan",
+        "folderPath": "{{path}} (jalur folder dipertahankan)",
+        "singleTitle": "File yang dihasilkan"
+      },
+      "longWork": {
+        "noFiles": "LONG_WORK selesai. Tidak ada file yang dihasilkan.",
+        "complete": "LONG_WORK selesai: File {{count}} di-zip.",
+        "projectTitle": "proyek LONG_WORK",
+        "filesPackaged": "File {{count}} dikemas"
+      },
+      "webReader": {
+        "fetching": "Mengambil konten halaman...",
+        "processing": "Memproses konten...",
+        "converting": "Mengonversi ke Penurunan Harga...",
+        "creating": "Membuat berkas...",
+        "fetchFailed": "Gagal mengambil halaman.",
+        "parseFailed": "Tidak dapat menguraikan konten utama dari halaman ini.",
+        "unknown": "Tidak dikenal"
+      },
+      "githubReader": {
+        "downloading": "Mengunduh {{owner}}/{{repo}} ({{branch}})...",
+        "extracting": "Mengekstrak ZIP...",
+        "processing": "Memproses file...",
+        "creating": "Membuat berkas...",
+        "invalidUrl": "URL GitHub tidak valid. Gunakan: https://github.com/owner/repo",
+        "tokenRejected": "GitHub menolak token Anda. Periksa apakah ia memiliki cakupan repo dan belum kedaluwarsa.",
+        "notFound": "Repositori tidak ditemukan atau Anda mungkin memerlukan token GitHub untuk repositori pribadi. Tambahkan satu di Pengaturan Lanjutan.",
+        "downloadFailed": "Tidak dapat mengunduh {{owner}}/{{repo}}/{{branch}}. Periksa URL dan pastikan repo bersifat publik.",
+        "extractFailed": "Gagal mengekstrak ZIP: {{msg}}",
+        "directoryTree": "Pohon Direktori:"
+      },
+      "youtubeReader": {
+        "invalidUrl": "URL YouTube tidak valid.",
+        "fallbackTitle": "Video YouTube",
+        "noTranscript": "[Transkrip kosong. Video ini mungkin tidak memiliki teks.]",
+        "transcriptError": "[Kesalahan saat mengambil transkrip: {{msg}}]",
+        "bgScriptError": "[Tidak dapat mengambil data transkrip dari skrip latar belakang.]"
+      },
+      "twitterReader": {
+        "fetchFailed": "Gagal mengambil info tweet dari Twitter OEmbed.",
+        "noExtract": "Tidak dapat mengekstrak teks tweet."
+      }
+    },
+    "exporter": {
+      "branding": "Memori DeepSeek",
+      "archiveReport": "Laporan Arsip",
+      "userQuery": "Permintaan Pengguna",
+      "aiResponse": "Respon AI",
+      "pdfFooter": "Dokumen dihasilkan melalui Ekstensi Browser Memori DeepSeek",
+      "imageHeader": "Tangkapan Panjang",
+      "imageDate": "Diambil di {{date}}",
+      "userLabel": "Pengguna",
+      "assistantLabel": "Asisten",
+      "imageFooter": "Dihasilkan melalui Memori DeepSeek",
+      "htmlLogo": "Ekspor Memori DeepSeek",
+      "htmlToggleTheme": "Alihkan Tema",
+      "htmlFooter": "Diekspor melalui Ekstensi Browser Memori DeepSeek",
+      "copy": "Menyalin",
+      "copied": "Disalin!",
+      "powerpoint": "Power Point",
+      "presentation": "Presentasi",
+      "dsmTool": "Alat DSM",
+      "imageFailed": "Gagal membuat gambar. Silakan coba memilih lebih sedikit pesan."
+    },
+    "auto": {
+      "fetchFailed": "Gagal mengambil {{url}}:\n\n{{msg}}",
+      "githubFailed": "Gagal mengambil repo GitHub {{url}}:\n\n{{msg}}",
+      "tweetFailed": "Gagal mengambil tweet {{url}}:\n\n{{msg}}",
+      "youtubeFailed": "Gagal mengambil video YouTube {{url}}:\n\n{{msg}}",
+      "statusSuccess": "KESUKSESAN",
+      "statusError": "KESALAHAN",
+      "statusRejected": "DITOLAK",
+      "noOutput": "(Tidak ada keluaran)",
+      "generationError": "KESALAHAN selama pembuatan {{toolName}}.",
+      "errorMessage": "Pesan Kesalahan: {{msg}}",
+      "correctionPrompt": "Harap analisis kesalahan di atas, pelajari Referensi API Perpustakaan, lalu perbaiki kode dan berikan versi yang diperbaiki dalam tag <DSM:{{tagName}}> yang sesuai. Perhatikan baik-baik: nama metode API yang benar, argumen yang tepat, dan panggilan simpan/keluaran yang diperlukan di akhir."
+    },
+    "messageProcessor": {
+      "minCost": "<$0.0001",
+      "contextTemplate": "{{used}} / {{total}} ({{percent}}%)",
+      "contextTooltip": "Konteks: {{text}}",
+      "longWorkClosed": "LONG_WORK ditutup karena respons API berakhir.",
+      "userPrice": "API: ~{{price}}",
+      "tokenCount": "{{count}} tok"
+    },
+    "whatsnew": {
+      "title": "Apa yang Baru",
+      "versionHistory": "Riwayat Versi",
+      "dismiss": "Mengerti, terima kasih!",
+      "reportBug": "Laporkan Bug",
+      "requestFeature": "Fitur Permintaan",
+      "brandingNote": "KonteksFlow adalah fork komunitas dari DeepSeek Memory. Riwayat rilis lama mengacu pada upstream; lihat NOTICE untuk atribusi.",
+      "seeAllChanges": "Lihat semua perubahan di v{{version}} di GitHub",
+      "seeDetailed": "Lihat catatan rilis terperinci di GitHub",
+      "features": {
+        "v0_1_9": {
+          "title": "Perintah Multi-Sistem, Pengerjaan Ulang Visualizer & Penelitian Mendalam",
+          "features": {
+            "feat_0": {
+              "title": "Mode Prompt Multi-Sistem & Penjadwalan Lanjutan",
+              "description": "Gunakan beberapa entri prompt sistem dengan opsi penjadwalan per entri - pesan pertama, setiap N putaran, atau selalu."
+            },
+            "feat_1": {
+              "title": "Pengerjaan Ulang Visualisator",
+              "description": "Widget visualizer sekarang dapat diubah ukurannya dan diunduh. Seluruh UI telah dikerjakan ulang untuk pengalaman yang lebih bersih."
+            },
+            "feat_2": {
+              "title": "Penelitian Mendalam",
+              "description": "Beri tahu DeepSeek sebuah topik, tinjau rencana yang dihasilkan, dan setelah disetujui, DeepSeek akan melakukan penelitian multi-langkah yang mendalam secara otomatis."
+            },
+            "feat_3": {
+              "title": "Perbaikan Ekspor/Impor",
+              "description": "Semua data ekstensi (pengaturan, keterampilan, ingatan, karakter, proyek) kini dapat diekspor dan diimpor dengan dukungan enkripsi opsional."
+            }
+          }
+        },
+        "v0_1_8": {
+          "title": "Pengerjaan Ulang Memori, Item Tersimpan & API Playground",
+          "features": {
+            "feat_0": {
+              "title": "Pengerjaan Ulang Memori",
+              "description": "Sistem memori yang disebut telah dikerjakan ulang dengan pendekatan berbasis token yang tumpang tindih untuk pencocokan konteks yang lebih baik."
+            },
+            "feat_1": {
+              "title": "Item Tersimpan (Bookmark & ​​Cuplikan)",
+              "description": "Simpan pesan untuk akses nanti. Buat cuplikan dan kirimkan dengan satu klik."
+            },
+            "feat_2": {
+              "title": "Alat Pencipta Keterampilan",
+              "description": "Minta AI untuk membuatkan keterampilan khusus untuk Anda langsung dari obrolan."
+            },
+            "feat_3": {
+              "title": "Impor Memori dari AI Lain",
+              "description": "Impor memori Anda dari platform AI lain ke DeepSeek."
+            },
+            "feat_4": {
+              "title": "Taman Bermain API",
+              "description": "Taman bermain bawaan untuk menguji API DeepSeek dengan mudah."
+            },
+            "feat_5": {
+              "title": "Alat Pencarian Otomatis",
+              "description": "Mengganti pembacaan dan pencarian tautan mode Pakar yang dihapus dengan alat pencarian terintegrasi kami sendiri."
+            },
+            "feat_6": {
+              "title": "Perbaikan Bug & Peningkatan UX",
+              "description": "Banyak perbaikan bug dan penyempurnaan UX di seluruh ekstensi."
+            }
+          }
+        },
+        "v0_1_7": {
+          "title": "Lokalisasi, Perintah Kustom & RAG",
+          "features": {
+            "feat_0": {
+              "title": "Sistem Lokalisasi",
+              "description": "Memori DeepSeek sekarang mendukung banyak bahasa. Bantu kami meningkatkan terjemahan atau menambahkan bahasa Anda di <a href='https://github.com/XunowID/KonteksFlow/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a>."
+            },
+            "feat_1": {
+              "title": "Perintah Kustom",
+              "description": "Buat, simpan, dan beralih di antara beberapa perintah sistem dengan mudah."
+            },
+            "feat_2": {
+              "title": "Pencarian Proyek RAG",
+              "description": "Sistem RAG primitif telah ditambahkan. Hubungkan proyek atau pilih folder lokal untuk pencarian file. Kami akan terus meningkatkan ini dalam rilis mendatang."
+            },
+            "feat_3": {
+              "title": "Peningkatan UI",
+              "description": "Ciutkan/perluas untuk pesan panjang, ikon ekstensi membuka situs web DeepSeek, status server dan spanduk pengumuman, dan banyak lagi..."
+            },
+            "feat_4": {
+              "title": "Perbaikan Bug & Kinerja",
+              "description": "Pengurai alat DSM dan penyempurnaan alat Office. Memperbaiki masalah rendering font. Berbagai stabilitas dan optimalisasi kinerja dan banyak lagi..."
+            }
+          }
+        },
+        "v0_1_6": {
+          "title": "Android & Organisasi",
+          "features": {
+            "feat_0": {
+              "title": "Versi Android",
+              "description": "Versi Android merupakan bagian dari proyek upstream; fork KonteksFlow ini adalah ekstensi browser."
+            },
+            "feat_1": {
+              "title": "Pemfilteran & Tag Obrolan",
+              "description": "Atur sesi Anda dengan menambahkan tag. Filter dan obrolan grup dengan mudah dari menu sidebar."
+            },
+            "feat_2": {
+              "title": "Ekspor Pengerjaan Ulang UI",
+              "description": "Antarmuka ekspor yang baru dirancang untuk Penurunan Harga, PDF, HTML, dan Gambar. Ekspor sesi penuh atau bagian tertentu."
+            }
+          }
+        },
+        "v0_1_5": {
+          "title": "Penyempurnaan & Visibilitas",
+          "features": {
+            "feat_0": {
+              "title": "Yang Baru Popup",
+              "description": "Anda sedang melihatnya! Sekarang kami akan terus memberi Anda informasi terbaru tentang perubahan terbaru di sini."
+            },
+            "feat_1": {
+              "title": "Kontrol Injeksi Tingkat Lanjut",
+              "description": "Pilih antara pesan 'Selalu', 'Pesan Pertama', atau 'Setiap X' dengan interval yang dapat disesuaikan untuk perintah sistem."
+            },
+            "feat_2": {
+              "title": "Dukungan Repo Pribadi",
+              "description": "Impor repositori pribadi melalui GitHub Personal Access Tokens dengan aman."
+            },
+            "feat_3": {
+              "title": "Token & Estimasi Harga",
+              "description": "Estimasi penggunaan token secara real-time dan tampilan jendela konteks untuk penggunaan yang setara dengan API."
+            },
+            "feat_4": {
+              "title": "Nonaktifkan Memori",
+              "description": "Tombol baru di Setelan untuk mencegah ekstensi mempertahankan konteks percakapan."
+            },
+            "feat_5": {
+              "title": "Peningkatan Stabilitas",
+              "description": "Menyelesaikan masalah penanganan pesan dan menyempurnakan status UI secara keseluruhan."
+            }
+          }
+        },
+        "v0_1_4": {
+          "title": "Proyek & Pengaturan Lanjutan",
+          "features": {
+            "feat_0": {
+              "title": "Menu Proyek",
+              "description": "Kontrol organisasi yang lebih baik untuk sesi dan file."
+            },
+            "feat_1": {
+              "title": "Pencarian Sejarah",
+              "description": "Menambahkan fungsionalitas pencarian ke sidebar riwayat sesi."
+            },
+            "feat_2": {
+              "title": "Pengaturan Lanjutan",
+              "description": "Menu pengaturan dikerjakan ulang dengan tata letak akordeon untuk menghemat ruang dan meningkatkan fokus."
+            },
+            "feat_3": {
+              "title": "Nonaktifkan Perintah Sistem",
+              "description": "Opsi baru untuk menonaktifkan Prompt Sistem Tersembunyi sepenuhnya bila tidak diperlukan."
+            },
+            "feat_4": {
+              "title": "Bahasa Paksa",
+              "description": "Pastikan DeepSeek selalu merespons dalam bahasa pilihan Anda, apa pun masukannya."
+            }
+          }
+        },
+        "v0_1_3": {
+          "title": "Ajukan Pertanyaan & Ekspor",
+          "features": {
+            "feat_0": {
+              "title": "Alat Ajukan Pertanyaan",
+              "description": "DeepSeek sekarang dapat meminta klarifikasi ketika tidak yakin tentang konteks atau instruksi."
+            },
+            "feat_1": {
+              "title": "Penurunan Harga & Ekspor PDF",
+              "description": "Ekspor sesi obrolan lengkap Anda ke file Markdown dan PDF."
+            },
+            "feat_2": {
+              "title": "Atur Ulang Segera",
+              "description": "Reset prompt sistem dengan mudah ke keadaan defaultnya."
+            },
+            "feat_3": {
+              "title": "Perbaikan Navigasi",
+              "description": "Menyelesaikan masalah pemuatan ulang halaman penuh saat mengklik logo atau 'Obrolan Baru'."
+            }
+          }
+        },
+        "v0_1_2": {
+          "title": "Lintas-Browser & Pelari Kode",
+          "features": {
+            "feat_0": {
+              "title": "Dukungan Firefox",
+              "description": "Menambahkan dukungan eksperimental untuk browser Firefox."
+            },
+            "feat_1": {
+              "title": "Pelari Kode yang Ditingkatkan",
+              "description": "Memperbarui pelari Python dan menambahkan lingkungan eksekusi JS dan TS baru."
+            },
+            "feat_2": {
+              "title": "Ambil Otomatis GitHub",
+              "description": "Suntikkan repositori GitHub langsung ke dalam obrolan melalui perintah DSM:AUTO."
+            }
+          }
+        },
+        "v0_1_1": {
+          "title": "Dukungan & Keandalan Suara",
+          "features": {
+            "feat_0": {
+              "title": "Dukungan Suara Penuh",
+              "description": "Integrasi Speech-to-Text dan Text-to-Speech yang lengkap."
+            },
+            "feat_1": {
+              "title": "Konfigurasi Suara",
+              "description": "Bahasa suara dan pengenalan yang dapat dikonfigurasi tersedia di Pengaturan."
+            },
+            "feat_2": {
+              "title": "Navigasi yang Ditingkatkan",
+              "description": "Logo dan 'Obrolan Baru' kini menjadi tag <a> asli, mendukung 'Buka di tab baru'."
+            },
+            "feat_3": {
+              "title": "Keandalan Streaming",
+              "description": "Penanganan aliran terhenti yang lebih baik dan penutupan tag secara otomatis."
+            }
+          }
+        }
+      }
+    },
+    "language": {
+      "en": "Bahasa inggris",
+      "tr": "Turki",
+      "ru": "Rusia",
+      "zh-cn": "简体中文",
+      "ja": "日本語",
+      "bn": "বাংলা",
+      "id": "Bahasa Indonesia"
+    },
+    "apiPlayground": {
+      "title": "Uji Coba API",
+      "builder": "Penyusun",
+      "response": "Respons",
+      "history": "Riwayat",
+      "presets": "Preset",
+      "endpoint": "Endpoint",
+      "model": "Model",
+      "messages": "Pesan",
+      "stream": "Streaming",
+      "temperature": "Suhu",
+      "maxTokens": "Token Maks",
+      "topP": "Top P",
+      "frequencyPenalty": "Penalti Frekuensi",
+      "presencePenalty": "Penalti Kehadiran",
+      "thinking": "Penalaran",
+      "disabled": "Nonaktif",
+      "enabled": "Aktif",
+      "budgetToken": "Token Anggaran",
+      "reasoningEffort": "Upaya Penalaran",
+      "low": "Rendah",
+      "medium": "Sedang",
+      "high": "Tinggi",
+      "responseFormat": "Format Respons",
+      "text": "Teks",
+      "jsonObject": "Objek JSON",
+      "jsonSchema": "Skema JSON",
+      "schema": "Skema",
+      "tools": "Tools",
+      "toolChoice": "Pilihan Alat",
+      "auto": "Otomatis",
+      "required": "Diperlukan",
+      "none": "Tidak ada",
+      "toolName": "Nama Alat",
+      "addTool": "Tambahkan Alat",
+      "addMessage": "Tambahkan Pesan",
+      "role": "Peran",
+      "content": "Isi",
+      "name": "Nama",
+      "prefix": "Awalan",
+      "toolCallId": "ID Panggilan Alat",
+      "remove": "Hapus",
+      "moveUp": "Pindah ke Atas",
+      "moveDown": "Pindah ke Bawah",
+      "beta": "Beta",
+      "prefixCompletion": "Penyelesaian Awalan",
+      "store": "Simpan",
+      "reasoning": "Pemikiran",
+      "metadata": "Metadata",
+      "userId": "ID Pengguna",
+      "labels": "Label",
+      "logprobs": "Masalah log",
+      "topLogprobs": "Masalah Log Teratas",
+      "copy": "Menyalin",
+      "noResponse": "Kirim permintaan untuk melihat responsnya.",
+      "noKey": "Tidak ada kunci",
+      "messagePlaceholder": "Masukkan isi pesan...",
+      "sending": "Mengirim...",
+      "send": "Mengirim",
+      "reset": "Mengatur ulang",
+      "saveRequest": "Simpan Permintaan",
+      "saveName": "Simpan Nama",
+      "manageKeys": "Kelola Kunci API",
+      "addKey": "Tambahkan Kunci",
+      "noKeysHint": "Tidak ada kunci API yang disimpan. Tambahkan satu untuk mulai mengirim permintaan.",
+      "useActiveKey": "Menggunakan kunci: {{name}}",
+      "noActiveKey": "Tidak ada kunci API yang aktif",
+      "searchHistory": "Riwayat pencarian...",
+      "allModels": "Semua Model",
+      "exportHistory": "Ekspor",
+      "clearHistory": "Jernih",
+      "noHistory": "Belum ada entri riwayat.",
+      "delete": "Menghapus",
+      "historyLimit": "Sejarah dibatasi hingga 500 entri. Ekspor untuk disimpan sebelum dibersihkan.",
+      "builtinPresets": "Preset Bawaan",
+      "savedRequests": "Permintaan Tersimpan",
+      "viewCurl": "Lihat cURL",
+      "copyCode": "Salin Kode",
+      "clear": "Jernih",
+      "latency": "Latensi",
+      "finishReason": "Selesaikan Alasan",
+      "tokens": "Token",
+      "input": "Masukan",
+      "output": "Keluaran",
+      "cacheHit": "Tembolok Terkena",
+      "cacheMiss": "Cache Nona",
+      "cacheSavings": "Penghematan Cache",
+      "cost": "Biaya",
+      "estimatedCost": "Perkiraan Biaya",
+      "responseTime": "Waktu Respons",
+      "rawResponse": "Respon Mentah",
+      "streamChunks": "Potongan Aliran",
+      "toolsCalled": "Alat yang Disebut",
+      "enterJsonSchema": "Masukkan skema JSON...",
+      "saveNamePlaceholder": "Beri nama permintaan ini...",
+      "betaFeatureDescription": "Fitur titik akhir beta (gunakan dengan hati-hati).",
+      "codeGen": "Buat Kode",
+      "promptSuffix": "Akhiran Cepat"
+    },
+    "workspace": {
+      "tab": "Folder proyek",
+      "title": "Ruang kerja proyek",
+      "description": "Pilih folder lokal agar DeepSeek mendapat konteks berkas teks. Ekstensi membaca jenis berkas tertentu, melewati folder hasil build, lalu menyertakan teksnya dalam pesan chat.",
+      "chooseFolder": "Pilih folder proyek",
+      "unsupported": "Akses folder tersedia di browser berbasis Chromium pada halaman aman.",
+      "connectFailed": "Folder tidak dapat dibuka.",
+      "permissionError": "Izin akses folder berakhir. Muat ulang berkas atau pilih folder lagi.",
+      "fileCount": "{{count}} berkas teks",
+      "contextNote": "Ekstensi mencari cuplikan berkas yang relevan dari maksimal 80 berkas terindeks, lalu mengirim cuplikan terpilih ke DeepSeek. Periksa berkas sebelum menghubungkan folder.",
+      "fileLimit": "Batas jumlah berkas tercapai; beberapa berkas dilewati.",
+      "truncated": "cuplikan dipersingkat",
+      "refresh": "Muat ulang berkas",
+      "undoLast": "Urungkan perubahan terakhir",
+      "disconnect": "Putuskan folder",
+      "proposals": "Usulan perubahan ({{count}})",
+      "noProposals": "Belum ada usulan perubahan berkas. Minta DeepSeek mengedit atau membuat berkas proyek.",
+      "review": "Tinjau",
+      "reviewTitle": "Tinjau perubahan berkas",
+      "reviewNote": "Berkas belum ditulis. Periksa seluruh isi di bawah sebelum menyimpan.",
+      "current": "Berkas saat ini",
+      "proposed": "Usulan berkas",
+      "newFile": "Berkas ini belum ada.",
+      "reject": "Tolak",
+      "approve": "Setujui dan simpan",
+      "writeFailed": "Berkas tidak dapat disimpan. Periksa izin folder lalu coba lagi.",
+      "changedSinceReview": "Berkas berubah setelah ditinjau. Tinjau isi terbaru sebelum menyimpan."
+    },
+    "pptxMaker": {
+      "tab": "PowerPoint",
+      "title": "Pembuat PowerPoint",
+      "description": "Minta DeepSeek membuat presentasi baru lewat chat. Rancangan slide muncul di sini agar bisa ditinjau sebelum mengunduh berkas .pptx.",
+      "scope": "Hanya membuat presentasi baru; belum bisa mengedit file .pptx yang sudah ada. Tinjau grafik, sumber, dan angka faktual sebelum digunakan.",
+      "empty": "Belum ada usulan presentasi. Minta DeepSeek membuat presentasi PowerPoint di chat.",
+      "untitled": "Slide tanpa judul",
+      "slideCount": "{{count}} slide",
+      "chartPreview": "Grafik {{chart}} dengan {{count}} nilai",
+      "download": "Unduh .pptx",
+      "generating": "Membuat?",
+      "downloaded": "{{title}}.pptx berhasil diunduh.",
+      "failed": "Presentasi tidak dapat dibuat.",
+      "dismiss": "Tutup"
+    }
+  }
+}
