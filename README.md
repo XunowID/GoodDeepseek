@@ -6,7 +6,7 @@
 
 ## Preview
 
-The following images show the GoodDeepseek project page and an illustrative extension interface. The interface image is a static preview, not a live DeepSeek session.
+Open the [GoodDeepseek project website](https://xunowid.github.io/GoodDeepseek/). The following images show the site and an illustrative extension interface. The interface image is a static preview, not a live DeepSeek session.
 
 ![GoodDeepseek project website and feature overview](docs/assets/site-preview.png)
 
