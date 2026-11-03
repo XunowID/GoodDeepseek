@@ -4,6 +4,14 @@
 
 > Unofficial community project. Not affiliated with DeepSeek.
 
+## Preview
+
+The following images show the GoodDeepseek project page and an illustrative extension interface. The interface image is a static preview, not a live DeepSeek session.
+
+![GoodDeepseek project website and feature overview](docs/assets/site-preview.png)
+
+![Illustrative GoodDeepseek extension interface](docs/assets/interface-preview.png)
+
 ## Features
 
 - **Persistent memory** for preferences, projects, and context across conversations.

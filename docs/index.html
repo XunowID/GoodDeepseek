@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GoodDeepseek adds memory, skills, voice input, and document creation to DeepSeek.">
+  <title>GoodDeepseek — a workspace for DeepSeek</title>
+  <style>
+    :root{--forest:#123b35;--jade:#187663;--leaf:#d8f36a;--paper:#f6f5ef;--ink:#172521;--muted:#66766e;--line:#e2e7df;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-size:18px;font-weight:780;letter-spacing:-.055em}.brand img{width:35px;height:35px;border-radius:10px}.links{display:flex;gap:30px;align-items:center;color:#56655e;font-size:13px}.links a:hover{color:var(--jade)}.github{border:1px solid #d9e0d7;border-radius:9px;padding:9px 14px;font-weight:650;background:#ffffff80}
+    .hero{position:relative;overflow:hidden;background:var(--forest);color:#f5f4ec;border-radius:22px;padding:68px 56px 58px;min-height:500px;display:grid;grid-template-columns:.83fr 1.17fr;gap:34px;align-items:center}.hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;border:1px solid #ffffff0d;right:32%;top:-330px;box-shadow:0 0 0 44px #ffffff08,0 0 0 90px #ffffff05}.copy{position:relative;z-index:1;max-width:445px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#c4d7c5;font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:700}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--leaf);box-shadow:0 0 13px #d8f36a80}.copy h1{font-size:clamp(42px,5vw,62px);line-height:1.04;letter-spacing:-.065em;margin:23px 0 17px;font-weight:720}.copy h1 em{font-style:normal;color:var(--leaf)}.copy p{max-width:410px;color:#c9d7cf;font-size:15px;line-height:1.7;margin:0}.ctas{display:flex;align-items:center;gap:12px;margin-top:27px}.button{border-radius:9px;padding:11px 16px;font-weight:700;font-size:13px}.button.primary{background:var(--leaf);color:#1a352c}.button.secondary{border:1px solid #ffffff3c;color:#edf2eb}.mini{margin-top:22px;font-size:11px;color:#9fb7aa}
+    .preview-wrap{position:relative;z-index:1;padding:9px;background:#ffffff14;border:1px solid #ffffff25;border-radius:16px;box-shadow:0 28px 70px #081d1a55;transform:rotate(1deg)}.preview-wrap img{display:block;width:100%;height:auto;border-radius:9px}.preview-label{position:absolute;top:-14px;right:21px;padding:6px 10px;border:1px solid #ffffff26;border-radius:7px;background:#f7f5ed;color:#31483e;font-size:10px;font-weight:750;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 5px 12px #001b1630}
+    .section{padding:76px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:36px;margin-bottom:27px}.kicker{font-size:10px;letter-spacing:.14em;color:var(--jade);text-transform:uppercase;font-weight:800}.section h2{font-size:34px;line-height:1.12;letter-spacing:-.05em;margin:9px 0 0}.section-head p{max-width:410px;color:var(--muted);font-size:13px;margin:0 0 3px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.feature{min-height:180px;padding:22px;border:1px solid var(--line);border-radius:14px;background:#fff;transition:transform .18s ease,border-color .18s ease}.feature:hover{transform:translateY(-3px);border-color:#b5cdc0}.icon{width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:#e8f3ec;color:var(--jade);font-size:16px;font-weight:800}.feature h3{font-size:14px;margin:16px 0 7px;letter-spacing:-.02em}.feature p{font-size:12px;line-height:1.65;color:var(--muted);margin:0}
+    .workflow{background:#eaece5;border-radius:18px;padding:28px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{padding:17px;background:#ffffffb8;border:1px solid #dce2d9;border-radius:11px}.step small{color:var(--jade);font-size:10px;font-weight:800;letter-spacing:.12em}.step b{display:block;font-size:12px;margin-top:10px}.step p{font-size:11px;color:var(--muted);margin:5px 0 0}.trust{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:27px 30px;border-radius:14px;background:var(--forest);color:#eef3ec}.trust strong{font-size:14px}.trust p{max-width:680px;color:#c1d1c5;font-size:12px;margin:0}.footer{border-top:1px solid var(--line);padding:24px 0 34px;display:flex;justify-content:space-between;color:#6e7c74;font-size:11px}.footer a{color:var(--jade);font-weight:650}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;padding:44px 32px;gap:34px}.copy{max-width:600px}.preview-wrap{max-width:700px}.section{padding:56px 0}.grid{grid-template-columns:repeat(2,1fr)}.workflow{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.nav{height:64px}.links{gap:12px}.links>a:not(.github){display:none}.hero{padding:36px 22px;border-radius:16px;min-height:auto}.copy h1{font-size:43px}.ctas{flex-wrap:wrap}.section-head{display:block}.section-head p{margin-top:13px}.section h2{font-size:29px}.grid{grid-template-columns:1fr}.feature{min-height:150px}.workflow{grid-template-columns:1fr;padding:14px}.trust{align-items:flex-start;flex-direction:column;padding:22px}.footer{gap:12px;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.feature{transition:none}.feature:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top"><img src="../icon.svg" alt=""><span>GoodDeepseek</span></a>
+    <nav class="links" aria-label="Main navigation"><a href="#features">Features</a><a href="#workflow">How it works</a><a class="github" href="https://github.com/XunowID/GoodDeepseek">View on GitHub</a></nav>
+  </header>
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div class="copy">
+        <span class="eyebrow"><i></i> A personal workspace for DeepSeek</span>
+        <h1>Make more room for <em>good work.</em></h1>
+        <p>GoodDeepseek brings memory, custom skills, voice input, project context, and useful files into one browser workspace for DeepSeek.</p>
+        <div class="ctas"><a class="button primary" href="https://github.com/XunowID/GoodDeepseek">Explore the project</a><a class="button secondary" href="#features">See what it can do</a></div>
+        <div class="mini">Free and open source under the MIT License</div>
+      </div>
+      <div class="preview-wrap"><span class="preview-label">Interface preview</span><img src="assets/interface-preview.png" alt="Illustrative preview of GoodDeepseek's memory, skills, voice, and document panels"></div>
+    </section>
+    <section id="features" class="section">
+      <div class="section-head"><div><span class="kicker">Built around your work</span><h2>Useful context. Practical outputs.</h2></div><p>Keep the model, your instructions, and the files you create connected in a workflow you can inspect.</p></div>
+      <div class="grid">
+        <article class="feature"><span class="icon">M</span><h3>Persistent memory</h3><p>Carry selected preferences and project facts across conversations, with controls to review what is saved.</p></article>
+        <article class="feature"><span class="icon">S</span><h3>Skills that fit the task</h3><p>Browse custom skills, let Auto Skill select relevant guidance, or install a public skill when you ask.</p></article>
+        <article class="feature"><span class="icon">V</span><h3>Voice with a preview</h3><p>Dictate into the chat composer, inspect the live transcript, and stop or insert it before sending.</p></article>
+        <article class="feature"><span class="icon">P</span><h3>Project workspace</h3><p>Search selected local files for relevant snippets and review proposed file changes before applying them.</p></article>
+        <article class="feature"><span class="icon">A</span><h3>Office artifacts</h3><p>Generate editable Word, Excel, and PowerPoint files, plus simple SVG illustrations.</p></article>
+        <article class="feature"><span class="icon">I</span><h3>Your instructions</h3><p>Set a personality and global system prompt to guide DeepSeek's response style and priorities.</p></article>
+      </div>
+    </section>
+    <section id="workflow" class="section" style="padding-top:0">
+      <div class="section-head"><div><span class="kicker">A clear workflow</span><h2>From request to result.</h2></div><p>GoodDeepseek works around DeepSeek and keeps the important choices visible to you.</p></div>
+      <div class="workflow"><div class="step"><small>01 / CONTEXT</small><b>Choose what matters</b><p>Memory, skills, or selected workspace files.</p></div><div class="step"><small>02 / CREATE</small><b>Work with DeepSeek</b><p>Draft, organize, summarize, or plan.</p></div><div class="step"><small>03 / REVIEW</small><b>Inspect the result</b><p>Preview text, files, and proposed changes.</p></div><div class="step"><small>04 / KEEP</small><b>Use your output</b><p>Download or apply approved changes.</p></div></div>
+    </section>
+    <section class="trust"><strong>Your context stays under your control.</strong><p>Memory and settings are stored in your browser profile. When a feature uses context, relevant information is sent to DeepSeek with your message so the model can use it. GoodDeepseek is an unofficial community project.</p></section>
+  </main>
+  <footer class="wrap footer"><span>GoodDeepseek · Made by XunowID</span><a href="https://github.com/XunowID/GoodDeepseek">Source code on GitHub</a></footer>
+</body>
+</html>
