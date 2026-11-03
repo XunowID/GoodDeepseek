@@ -621,19 +621,19 @@
       }
     },
     "exporter": {
-      "branding": "KonteksFlow",
+      "branding": "GoodDeepseek",
       "archiveReport": "Arşiv Raporu",
       "userQuery": "Kullanıcı Sorusu",
       "aiResponse": "Yapay Zeka Yanıtı",
-      "pdfFooter": "KonteksFlow Tarayıcı Eklentisi ile oluşturulmuştur",
+      "pdfFooter": "GoodDeepseek Tarayıcı Eklentisi ile oluşturulmuştur",
       "imageHeader": "Uzun Görsel Yakalama",
       "imageDate": "{{date}} tarihinde yakalandı",
       "userLabel": "Kullanıcı",
       "assistantLabel": "Asistan",
-      "imageFooter": "KonteksFlow aracılığıyla oluşturulmuştur",
-      "htmlLogo": "KonteksFlow Dışa Aktarım",
+      "imageFooter": "GoodDeepseek aracılığıyla oluşturulmuştur",
+      "htmlLogo": "GoodDeepseek Dışa Aktarım",
       "htmlToggleTheme": "Temayı Değiştir",
-      "htmlFooter": "KonteksFlow Tarayıcı Eklentisi ile dışa aktarılmıştır",
+      "htmlFooter": "GoodDeepseek Tarayıcı Eklentisi ile dışa aktarılmıştır",
       "copy": "Kopyala",
       "copied": "Kopyalandı!",
       "powerpoint": "PowerPoint",
@@ -668,7 +668,7 @@
       "dismiss": "Anladım, teşekkürler!",
       "reportBug": "Hata Bildir",
       "requestFeature": "Özellik Öner",
-      "brandingNote": "KonteksFlow, DeepSeek Memory tabanli bir topluluk forkudur. Eski surum gecmisi upstream projeye aittir; atif icin NOTICE dosyasina bakin.",
+      "brandingNote": "GoodDeepseek, DeepSeek Memory tabanli bir topluluk forkudur. Eski surum gecmisi upstream projeye aittir; atif icin NOTICE dosyasina bakin.",
       "seeAllChanges": "v{{version}} sürümündeki tüm değişiklikleri GitHub'da gör",
       "seeDetailed": "Detaylı sürüm notlarını GitHub'da gör",
       "features": {
@@ -731,7 +731,7 @@
           "features": {
             "feat_0": {
               "title": "Lokalizasyon Sistemi",
-              "description": "KonteksFlow artık birden fazla dili destekliyor. Çevirileri iyileştirmek veya kendi dilinizi eklemek için <a href='https://github.com/XunowID/KonteksFlow/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a> repo'muzu ziyaret edin."
+              "description": "GoodDeepseek artık birden fazla dili destekliyor. Çevirileri iyileştirmek veya kendi dilinizi eklemek için <a href='https://github.com/XunowID/GoodDeepseek/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a> repo'muzu ziyaret edin."
             },
             "feat_1": {
               "title": "Özel Yönergeler",
@@ -756,7 +756,7 @@
           "features": {
             "feat_0": {
               "title": "Android Sürümü",
-              "description": "Android s?r?m? upstream projeye aittir; bu KonteksFlow fork?u bir taray?c? eklentisidir."
+              "description": "Android s?r?m? upstream projeye aittir; bu GoodDeepseek fork?u bir taray?c? eklentisidir."
             },
             "feat_1": {
               "title": "Sohbet Filtreleme ve Etiketler",

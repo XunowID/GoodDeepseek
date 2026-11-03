@@ -1,5 +1,5 @@
 /**
- * IndexedDB storage backend for KonteksFlow.
+ * IndexedDB storage backend for GoodDeepseek.
  *
  * Provides a robust, transactional storage layer similar to SQLite.
  * Falls back to chrome.storage.local if IndexedDB is unavailable.

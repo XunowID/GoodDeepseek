@@ -1,8 +1,8 @@
-# KonteksFlow Product Roadmap
+# GoodDeepseek Product Roadmap
 
 ## Product direction
 
-KonteksFlow extends DeepSeek with user-controlled context, practical work tools, and reviewable actions. It is a browser workspace around an existing model, not a new model or a claim to remove the model's limits.
+GoodDeepseek extends DeepSeek with user-controlled context, practical work tools, and reviewable actions. It is a browser workspace around an existing model, not a new model or a claim to remove the model's limits.
 
 ## Product principles
 

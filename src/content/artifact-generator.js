@@ -17,7 +17,7 @@ export async function downloadDocx(input) {
     if (["bullets", "numbered"].includes(block.type)) return (Array.isArray(block.items) ? block.items : []).slice(0, 30).map((item) => new api.Paragraph({ text: clean(item, 1000), bullet: block.type === "bullets" ? { indent: 360 } : undefined, numbering: block.type === "numbered" ? { reference: "dsm-numbering", level: 0 } : undefined }));
     return new api.Paragraph({ text });
   }).flat();
-  const doc = new api.Document({ creator: clean(input.author, 100) || "KonteksFlow", title, numbering: { config: [{ reference: "dsm-numbering", levels: [{ level: 0, format: "decimal", text: "%1.", alignment: "start", style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] }, sections: [{ children: blocks }] });
+  const doc = new api.Document({ creator: clean(input.author, 100) || "GoodDeepseek", title, numbering: { config: [{ reference: "dsm-numbering", levels: [{ level: 0, format: "decimal", text: "%1.", alignment: "start", style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] }, sections: [{ children: blocks }] });
   const blob = await api.Packer.toBlob(doc);
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");

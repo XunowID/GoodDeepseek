@@ -20,7 +20,7 @@
       "add": "Add"
     },
     "drawer": {
-      "title": "KonteksFlow",
+      "title": "GoodDeepseek",
       "close": "Close",
       "github": "GitHub",
       "version": "v{{version}}",
@@ -641,19 +641,19 @@
       }
     },
     "exporter": {
-      "branding": "KonteksFlow",
+      "branding": "GoodDeepseek",
       "archiveReport": "Archive Report",
       "userQuery": "User Query",
       "aiResponse": "AI Response",
-      "pdfFooter": "Document generated via KonteksFlow Browser Extension",
+      "pdfFooter": "Document generated via GoodDeepseek Browser Extension",
       "imageHeader": "Long Capture",
       "imageDate": "Captured on {{date}}",
       "userLabel": "User",
       "assistantLabel": "Assistant",
-      "imageFooter": "Generated via KonteksFlow",
-      "htmlLogo": "KonteksFlow Export",
+      "imageFooter": "Generated via GoodDeepseek",
+      "htmlLogo": "GoodDeepseek Export",
       "htmlToggleTheme": "Toggle Theme",
-      "htmlFooter": "Exported via KonteksFlow Browser Extension",
+      "htmlFooter": "Exported via GoodDeepseek Browser Extension",
       "copy": "Copy",
       "copied": "Copied!",
       "powerpoint": "PowerPoint",
@@ -688,7 +688,7 @@
       "dismiss": "Got it, thanks!",
       "reportBug": "Report Bug",
       "requestFeature": "Request Feature",
-      "brandingNote": "KonteksFlow is a community fork of DeepSeek Memory. Older release history refers to upstream; see NOTICE for attribution.",
+      "brandingNote": "GoodDeepseek is a community fork of DeepSeek Memory. Older release history refers to upstream; see NOTICE for attribution.",
       "seeAllChanges": "See all changes in v{{version}} on GitHub",
       "seeDetailed": "See detailed release notes on GitHub",
       "features": {
@@ -751,7 +751,7 @@
           "features": {
             "feat_0": {
               "title": "Localization System",
-              "description": "KonteksFlow now supports multiple languages. Help us improve translations or add your language on <a href='https://github.com/XunowID/KonteksFlow/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a>."
+              "description": "GoodDeepseek now supports multiple languages. Help us improve translations or add your language on <a href='https://github.com/XunowID/GoodDeepseek/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a>."
             },
             "feat_1": {
               "title": "Custom Prompts",
@@ -776,7 +776,7 @@
           "features": {
             "feat_0": {
               "title": "Android Version",
-              "description": "The Android release belongs to the upstream project; this KonteksFlow fork is a browser extension."
+              "description": "The Android release belongs to the upstream project; this GoodDeepseek fork is a browser extension."
             },
             "feat_1": {
               "title": "Chat Filtering & Tags",

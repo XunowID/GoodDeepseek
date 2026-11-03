@@ -1,5 +1,5 @@
 /**
- * Background service worker for KonteksFlow.
+ * Background service worker for GoodDeepseek.
  *
  * Responsibilities:
  * - Fetch remote skill URLs (GitHub READMEs, raw files, etc.)
@@ -135,7 +135,7 @@ function githubHeaders() {
   };
 }
 
-// ── Open KonteksFlow on Extension Icon Click ──
+// ── Open GoodDeepseek on Extension Icon Click ──
 if (typeof chrome !== "undefined" && chrome.action && chrome.action.onClicked) {
   chrome.action.onClicked.addListener(async (tab) => {
     if (tab && tab.id && tab.url && tab.url.includes("chat.deepseek.com")) {

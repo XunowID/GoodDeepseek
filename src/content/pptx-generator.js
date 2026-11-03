@@ -62,7 +62,7 @@ export function buildDeck(input, PptxGenJS) {
   const deck = normalizeDeck(input);
   const pptx = new PptxGenJS();
   pptx.layout = "LAYOUT_WIDE";
-  pptx.author = deck.author || "KonteksFlow";
+  pptx.author = deck.author || "GoodDeepseek";
   pptx.subject = "AI-generated presentation";
   pptx.title = deck.title;
   pptx.theme = { headFontFace: "Arial", bodyFontFace: "Arial", lang: "id-ID" };

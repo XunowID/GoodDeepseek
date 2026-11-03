@@ -1,6 +1,6 @@
-# KonteksFlow
+# GoodDeepseek
 
-**KonteksFlow** is a community browser extension that turns DeepSeek into a personal AI workspace with cross-chat memory, skills, voice input, local project search, and document generation.
+**GoodDeepseek** is a community browser extension that turns DeepSeek into a personal AI workspace with cross-chat memory, skills, voice input, local project search, and document generation.
 
 > Unofficial community project. Not affiliated with DeepSeek.
 
@@ -23,7 +23,7 @@ Memory and settings stay in the browser profile. Features that use AI send relev
 2. Run `npm install` and then `npm run build`.
 3. Open `chrome://extensions` or `edge://extensions`.
 4. Enable **Developer mode**, choose **Load unpacked**, and select the `dist/` folder.
-5. Open [DeepSeek Chat](https://chat.deepseek.com) and use the KonteksFlow panel.
+5. Open [DeepSeek Chat](https://chat.deepseek.com) and use the GoodDeepseek panel.
 
 ## Development
 
@@ -36,7 +36,7 @@ The build creates a browser-loadable extension in `dist/`. After changing source
 
 ## Origin and attribution
 
-KonteksFlow is developed and maintained by [XunowID](https://github.com/XunowID). It is an extensively modified derivative of [DeepSeek Memory](https://github.com/logicwahid/deepseek-memory). Upstream attribution and its MIT license are preserved. See [NOTICE.md](NOTICE.md) for details.
+GoodDeepseek is developed and maintained by [XunowID](https://github.com/XunowID). It is an extensively modified derivative of [DeepSeek Memory](https://github.com/logicwahid/deepseek-memory). Upstream attribution and its MIT license are preserved. See [NOTICE.md](NOTICE.md) for details.
 
 ## License
 

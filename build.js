@@ -1,5 +1,5 @@
 /**
- * Vite build script for KonteksFlow (Chromium only).
+ * Vite build script for GoodDeepseek (Chromium only).
  *
  * Builds three bundles: content, background, and injected (MAIN world hook).
  */

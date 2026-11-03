@@ -688,7 +688,7 @@
       "dismiss": "Mengerti, terima kasih!",
       "reportBug": "Laporkan Bug",
       "requestFeature": "Fitur Permintaan",
-      "brandingNote": "KonteksFlow adalah fork komunitas dari DeepSeek Memory. Riwayat rilis lama mengacu pada upstream; lihat NOTICE untuk atribusi.",
+      "brandingNote": "GoodDeepseek adalah fork komunitas dari DeepSeek Memory. Riwayat rilis lama mengacu pada upstream; lihat NOTICE untuk atribusi.",
       "seeAllChanges": "Lihat semua perubahan di v{{version}} di GitHub",
       "seeDetailed": "Lihat catatan rilis terperinci di GitHub",
       "features": {
@@ -751,7 +751,7 @@
           "features": {
             "feat_0": {
               "title": "Sistem Lokalisasi",
-              "description": "Memori DeepSeek sekarang mendukung banyak bahasa. Bantu kami meningkatkan terjemahan atau menambahkan bahasa Anda di <a href='https://github.com/XunowID/KonteksFlow/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a>."
+              "description": "Memori DeepSeek sekarang mendukung banyak bahasa. Bantu kami meningkatkan terjemahan atau menambahkan bahasa Anda di <a href='https://github.com/XunowID/GoodDeepseek/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a>."
             },
             "feat_1": {
               "title": "Perintah Kustom",
@@ -776,7 +776,7 @@
           "features": {
             "feat_0": {
               "title": "Versi Android",
-              "description": "Versi Android merupakan bagian dari proyek upstream; fork KonteksFlow ini adalah ekstensi browser."
+              "description": "Versi Android merupakan bagian dari proyek upstream; fork GoodDeepseek ini adalah ekstensi browser."
             },
             "feat_1": {
               "title": "Pemfilteran & Tag Obrolan",

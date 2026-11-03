@@ -1,23 +1,43 @@
 {
   "manifest_version": 3,
-  "name": "KonteksFlow for DeepSeek",
+  "name": "GoodDeepseek",
   "version": "2.0.0",
   "description": "A personal workspace for DeepSeek with persistent memory, skills, voice input, and document creation.",
-  "permissions": ["storage"],
-  "optional_host_permissions": ["https://api.github.com/*", "https://github.com/*", "https://raw.githubusercontent.com/*"],
-  "host_permissions": ["https://chat.deepseek.com/*"],
+  "permissions": [
+    "storage"
+  ],
+  "optional_host_permissions": [
+    "https://api.github.com/*",
+    "https://github.com/*",
+    "https://raw.githubusercontent.com/*"
+  ],
+  "host_permissions": [
+    "https://chat.deepseek.com/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://chat.deepseek.com/*"],
-      "js": ["content.js"],
-      "css": ["content.css"],
+      "matches": [
+        "https://chat.deepseek.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
       "run_at": "document_start"
     }
   ],
   "web_accessible_resources": [
     {
-      "resources": ["injected.js", "pptx-runtime.js", "docx-runtime.js"],
-      "matches": ["https://chat.deepseek.com/*"]
+      "resources": [
+        "injected.js",
+        "pptx-runtime.js",
+        "docx-runtime.js"
+      ],
+      "matches": [
+        "https://chat.deepseek.com/*"
+      ]
     }
   ],
   "background": {
@@ -29,7 +49,7 @@
     "128": "icon128.png"
   },
   "action": {
-    "default_title": "KonteksFlow",
+    "default_title": "GoodDeepseek",
     "default_icon": {
       "16": "icon16.png",
       "48": "icon48.png",

@@ -1,6 +1,6 @@
 export const OFFICE_SKILL = `---
 name: office-artifacts-id
-description: Membuat dokumen Word, workbook Excel, dan presentasi PowerPoint yang akurat, rapi, mudah diedit, serta siap diunduh melalui KonteksFlow.
+description: Membuat dokumen Word, workbook Excel, dan presentasi PowerPoint yang akurat, rapi, mudah diedit, serta siap diunduh melalui GoodDeepseek.
 ---
 
 # Office Artifacts
@@ -37,7 +37,7 @@ description: Panduan permanen untuk memilih pendekatan presentasi dan merancang 
 
 # Desain Presentasi dan Pemilihan Pendekatan
 
-Aktifkan untuk permintaan membuat, menyusun ulang, atau memperindah presentasi. Skill ini adalah panduan perancangan; fitur file yang tersedia di KonteksFlow menghasilkan PPTX yang dapat diedit.
+Aktifkan untuk permintaan membuat, menyusun ulang, atau memperindah presentasi. Skill ini adalah panduan perancangan; fitur file yang tersedia di GoodDeepseek menghasilkan PPTX yang dapat diedit.
 
 ## Tentukan pendekatan
 - Jika hasil harus dibuka dan diedit di PowerPoint, buat PPTX native; susun layout memakai teks, bentuk, tabel atau chart yang bisa diedit.
@@ -53,7 +53,7 @@ Aktifkan untuk permintaan membuat, menyusun ulang, atau memperindah presentasi. 
 - Tinjau konsistensi, keterbacaan, kepadatan dan ejaan sebelum mengeluarkan blok PPTX. Ikuti format DSM:PPTX_CREATE yang disediakan ekstensi.
 
 ## Referensi dan atribusi
-Panduan pemilihan pendekatan ini disusun ulang untuk KonteksFlow, terinspirasi oleh prinsip pemilihan skill dan perbandingan rute pada [many-ppt-skills](https://github.com/brycewang-stanford/many-ppt-skills). Perubahan dan adaptasi: panduan ringkas berbahasa Indonesia, disesuaikan untuk generator PPTX bawaan ekstensi. Materi tertulis repositori sumber berlisensi [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Panduan pemilihan pendekatan ini disusun ulang untuk GoodDeepseek, terinspirasi oleh prinsip pemilihan skill dan perbandingan rute pada [many-ppt-skills](https://github.com/brycewang-stanford/many-ppt-skills). Perubahan dan adaptasi: panduan ringkas berbahasa Indonesia, disesuaikan untuk generator PPTX bawaan ekstensi. Materi tertulis repositori sumber berlisensi [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 `;
 
 export const PPT_DESIGN_SKILL_META = { id: "recommended-ppt-design-id", name: "Desain Presentasi (persisten)", usage: "PowerPoint PPTX presentasi presentation slides slide deck desain visual layout gaya template visualisasi chart", content: PPT_DESIGN_SKILL, active: true };
@@ -65,7 +65,7 @@ description: Alur kerja presentasi bertahap untuk mengubah topik atau bahan menj
 
 # Alur Kerja Presentasi (adaptasi PPT Master)
 
-Gunakan bersama generator presentasi KonteksFlow untuk permintaan membuat PPT. Ini adalah panduan desain dan struktur, bukan paket Python PPT Master dan bukan izin untuk mengaku menjalankan skrip/tool yang tidak tersedia.
+Gunakan bersama generator presentasi GoodDeepseek untuk permintaan membuat PPT. Ini adalah panduan desain dan struktur, bukan paket Python PPT Master dan bukan izin untuk mengaku menjalankan skrip/tool yang tidak tersedia.
 
 ## Alur
 1. Kenali sumber bahan, audiens, tujuan presentasi, jumlah halaman yang diminta, dan kebutuhan editabilitas. Bila informasi tidak penting untuk mulai bekerja, simpulkan asumsi yang wajar dari konteks.
@@ -79,7 +79,7 @@ Gunakan bersama generator presentasi KonteksFlow untuk permintaan membuat PPT. I
 Ikuti format keluaran serta jenis slide yang benar-benar disediakan oleh blok instruksi DSM:PPTX_CREATE. Bila pengguna meminta template PPTX existing, animasi PowerPoint, narasi, atau fitur lain yang tidak didukung generator terpasang, jelaskan statusnya secara jujur dan gunakan bagian yang tersedia tanpa mengklaim fitur tersebut selesai.
 
 ## Atribusi
-Adaptasi alur perancangan dari [PPT Master](https://github.com/hugohe3/ppt-master), Copyright (c) 2025-2026 Hugo He, berlisensi [MIT](https://github.com/hugohe3/ppt-master/blob/main/LICENSE). Perubahan: diringkas dan diterjemahkan ke bahasa Indonesia, diarahkan ke format DSM:PPTX_CREATE dan kemampuan generator bawaan KonteksFlow.
+Adaptasi alur perancangan dari [PPT Master](https://github.com/hugohe3/ppt-master), Copyright (c) 2025-2026 Hugo He, berlisensi [MIT](https://github.com/hugohe3/ppt-master/blob/main/LICENSE). Perubahan: diringkas dan diterjemahkan ke bahasa Indonesia, diarahkan ke format DSM:PPTX_CREATE dan kemampuan generator bawaan GoodDeepseek.
 `;
 
 export const PPT_MASTER_SKILL_META = { id: "recommended-ppt-master-adaptation-id", name: "PPT Master Workflow (adaptasi)", usage: "PPT Master PowerPoint PPTX presentasi presentation slides slide deck dari dokumen materi PDF proposal laporan desain narasi native", content: PPT_MASTER_ADAPTATION, active: true };

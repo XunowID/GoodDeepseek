@@ -621,19 +621,19 @@
       }
     },
     "exporter": {
-      "branding": "KonteksFlow",
+      "branding": "GoodDeepseek",
       "archiveReport": "Архивный отчёт",
       "userQuery": "Запрос пользователя",
       "aiResponse": "Ответ ИИ",
-      "pdfFooter": "Документ создан через KonteksFlow Browser Extension",
+      "pdfFooter": "Документ создан через GoodDeepseek Browser Extension",
       "imageHeader": "Длинный снимок",
       "imageDate": "Снято {{date}}",
       "userLabel": "Пользователь",
       "assistantLabel": "Ассистент",
-      "imageFooter": "Создано через KonteksFlow",
-      "htmlLogo": "Экспорт KonteksFlow",
+      "imageFooter": "Создано через GoodDeepseek",
+      "htmlLogo": "Экспорт GoodDeepseek",
       "htmlToggleTheme": "Переключить тему",
-      "htmlFooter": "Экспортировано через KonteksFlow Browser Extension",
+      "htmlFooter": "Экспортировано через GoodDeepseek Browser Extension",
       "copy": "Копировать",
       "copied": "Скопировано!",
       "powerpoint": "PowerPoint",
@@ -668,7 +668,7 @@
       "dismiss": "Понятно, спасибо!",
       "reportBug": "Сообщить об ошибке",
       "requestFeature": "Предложить функцию",
-      "brandingNote": "KonteksFlow — форк сообщества на основе DeepSeek Memory. Старая история версий относится к upstream; см. NOTICE.",
+      "brandingNote": "GoodDeepseek — форк сообщества на основе DeepSeek Memory. Старая история версий относится к upstream; см. NOTICE.",
       "seeAllChanges": "Посмотреть все изменения в v{{version}} на GitHub",
       "seeDetailed": "Посмотреть подробные примечания к выпуску на GitHub",
       "features": {
@@ -731,7 +731,7 @@
           "features": {
             "feat_0": {
               "title": "Система локализации",
-              "description": "KonteksFlow теперь поддерживает несколько языков. Помогите нам улучшить переводы или добавить свой язык на <a href='https://github.com/XunowID/KonteksFlow/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a>."
+              "description": "GoodDeepseek теперь поддерживает несколько языков. Помогите нам улучшить переводы или добавить свой язык на <a href='https://github.com/XunowID/GoodDeepseek/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a>."
             },
             "feat_1": {
               "title": "Кастомные промпты",
@@ -756,7 +756,7 @@
           "features": {
             "feat_0": {
               "title": "Версия для Android",
-              "description": "?????? ??? Android ????????? ? ????????? ???????; ???? ???? KonteksFlow ???????? ??????????? ????????."
+              "description": "?????? ??? Android ????????? ? ????????? ???????; ???? ???? GoodDeepseek ???????? ??????????? ????????."
             },
             "feat_1": {
               "title": "Фильтрация чатов и теги",
