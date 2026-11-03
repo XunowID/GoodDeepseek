@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════
-   GoodDeepseek Design System — jade and warm sand identity
+   GoodDeepseek Design System — DeepSeek blue identity
    ══════════════════════════════════════════════ */
 
 /* ── Anti-Leak CSS Fallback ── */
@@ -35,8 +35,8 @@
   cursor: pointer !important;
   transition: background .15s ease, color .15s ease, transform .15s ease !important;
 }
-#dsm-speech-to-text:hover { color: var(--dsm-accent, #187663) !important; transform: translateY(-1px) !important; }
-#dsm-speech-to-text:focus-visible { outline: 2px solid var(--dsm-accent, #187663) !important; outline-offset: 2px !important; }
+#dsm-speech-to-text:hover { color: var(--dsm-accent, #4d6bfe) !important; transform: translateY(-1px) !important; }
+#dsm-speech-to-text:focus-visible { outline: 2px solid var(--dsm-accent, #4d6bfe) !important; outline-offset: 2px !important; }
 #dsm-speech-to-text svg { width: 19px !important; height: 19px !important; fill: none !important; stroke: currentColor !important; stroke-width: 1.8 !important; stroke-linecap: round !important; stroke-linejoin: round !important; }
 #dsm-speech-to-text.dsm-speech-listening { color: #fff !important; background: #dc3545 !important; border-color: #dc3545 !important; animation: dsm-speech-pulse 1.4s ease-in-out infinite !important; }
 @keyframes dsm-speech-pulse { 50% { box-shadow: 0 0 0 6px rgba(220, 53, 69, .16) !important; } }
@@ -61,9 +61,9 @@
 #dsm-speech-preview .dsm-speech-text { box-sizing:border-box !important; min-height:52px !important; max-height:110px !important; overflow:auto !important; padding:9px 10px !important; border-radius:9px !important; background:var(--dsm-bg-hover,#f3f5f8) !important; color:var(--dsm-text-primary,#172033) !important; white-space:pre-wrap !important; overflow-wrap:anywhere !important; font:14px/1.5 Arial,sans-serif !important; }
 #dsm-speech-preview .dsm-speech-actions { display:flex !important; justify-content:flex-end !important; gap:7px !important; margin-top:9px !important; }
 #dsm-speech-preview .dsm-speech-actions button { border:1px solid var(--dsm-border,rgba(100,116,139,.25)) !important; border-radius:8px !important; padding:6px 9px !important; background:var(--dsm-bg-panel,#fff) !important; color:var(--dsm-text-primary,#172033) !important; font:600 12px/1.2 Arial,sans-serif !important; cursor:pointer !important; }
-#dsm-speech-preview .dsm-speech-actions button[data-action="insert"] { background:var(--dsm-accent,#187663) !important; border-color:var(--dsm-accent,#187663) !important; color:#fff !important; }
+#dsm-speech-preview .dsm-speech-actions button[data-action="insert"] { background:var(--dsm-accent,#4d6bfe) !important; border-color:var(--dsm-accent,#4d6bfe) !important; color:#fff !important; }
 #dsm-speech-preview .dsm-speech-actions button:disabled { opacity:.45 !important; cursor:default !important; }
-#dsm-speech-preview .dsm-speech-actions button:focus-visible { outline:2px solid var(--dsm-accent,#187663) !important; outline-offset:2px !important; }
+#dsm-speech-preview .dsm-speech-actions button:focus-visible { outline:2px solid var(--dsm-accent,#4d6bfe) !important; outline-offset:2px !important; }
 
 /* ══════════════════════════════════════════════════════════════
    ANTI-LEAK CSS — JS-driven DOM hiding
@@ -118,11 +118,11 @@ body:not(.dark) {
   --dsm-text-primary: rgb(15, 17, 21);
   --dsm-text-secondary: rgb(90, 95, 105);
   --dsm-text-tertiary: rgb(150, 155, 165);
-  --dsm-accent: #187663;
-  --dsm-accent-hover: #125c4d;
-  --dsm-accent-glow: rgba(24, 118, 99, 0.12);
-  --dsm-accent-text: #146653;
-  --dsm-success: #10b981;
+  --dsm-accent: #4d6bfe;
+  --dsm-accent-hover: #3d5be0;
+  --dsm-accent-glow: rgba(77, 107, 254, 0.12);
+  --dsm-accent-text: #4d6bfe;
+  --dsm-success: #4d6bfe;
   --dsm-danger: #ef4444;
   --dsm-danger-border: rgba(239, 68, 68, 0.3);
   --dsm-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
@@ -155,11 +155,11 @@ html.dark, body.dark,
   --dsm-text-primary: rgb(249, 250, 251);
   --dsm-text-secondary: rgb(175, 180, 190);
   --dsm-text-tertiary: rgb(120, 125, 135);
-  --dsm-accent: #55c4a2;
-  --dsm-accent-hover: #76d8b9;
-  --dsm-accent-glow: rgba(85, 196, 162, 0.17);
-  --dsm-accent-text: #75d9b9;
-  --dsm-success: #34d399;
+  --dsm-accent: #7894ff;
+  --dsm-accent-hover: #98aeff;
+  --dsm-accent-glow: rgba(120, 148, 255, 0.18);
+  --dsm-accent-text: #a6b8ff;
+  --dsm-success: #8ea6ff;
   --dsm-danger: #f87171;
   --dsm-danger-border: rgba(248, 113, 113, 0.3);
   --dsm-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -219,7 +219,7 @@ html.dark, body.dark,
   font-weight: 600;
   padding: 10px 20px;
   letter-spacing: 0.02em;
-  box-shadow: 0 2px 8px rgba(24, 118, 99, 0.3), 0 0 0 0 rgba(24, 118, 99, 0);
+  box-shadow: 0 2px 8px rgba(77, 107, 254, 0.3), 0 0 0 0 rgba(77, 107, 254, 0);
   cursor: pointer;
   transition: all var(--dsm-transition);
   outline: none;
@@ -237,13 +237,13 @@ html.dark, body.dark,
 
 #dsm-toggle:hover {
   background: var(--dsm-accent-hover);
-  box-shadow: 0 4px 16px rgba(24, 118, 99, 0.4), 0 0 0 0 rgba(24, 118, 99, 0);
+  box-shadow: 0 4px 16px rgba(77, 107, 254, 0.4), 0 0 0 0 rgba(77, 107, 254, 0);
   transform: translateY(-1px);
 }
 
 #dsm-toggle:active {
   transform: translateY(0) scale(0.98);
-  box-shadow: 0 1px 4px rgba(24, 118, 99, 0.2);
+  box-shadow: 0 1px 4px rgba(77, 107, 254, 0.2);
 }
 
 /* ══════════════════════════════════
@@ -2442,12 +2442,12 @@ textarea.dsm-input,
   margin-top: 2px;
 }
 .dsm-saved-type-user {
-  background: rgba(24, 118, 99, 0.12);
+  background: rgba(77, 107, 254, 0.12);
   color: var(--dsm-accent);
 }
 .dsm-saved-type-assistant {
   background: rgba(16, 185, 129, 0.1);
-  color: #10b981;
+  color: #4d6bfe;
 }
 .dsm-saved-type-snippet {
   background: rgba(234, 179, 8, 0.1);
@@ -3821,8 +3821,8 @@ textarea.dsm-input,
   color: var(--accent) !important;
 }
 .dsm-api-badge-json {
-  background: color-mix(in srgb, #10b981 15%, transparent) !important;
-  color: #10b981 !important;
+  background: color-mix(in srgb, #4d6bfe 15%, transparent) !important;
+  color: #4d6bfe !important;
 }
 .dsm-api-badge-tools {
   background: color-mix(in srgb, #8b5cf6 15%, transparent) !important;
@@ -4356,7 +4356,7 @@ textarea.dsm-input,
 }
 
 .dsm-api-chunk-usage {
-  color: #10b981;
+  color: #4d6bfe;
   font-size: 9px;
   text-transform: uppercase;
   margin-left: 4px;
@@ -4390,7 +4390,7 @@ textarea.dsm-input,
 }
 
 .dsm-api-msg-row-assistant {
-  border-left: 3px solid #10b981;
+  border-left: 3px solid #4d6bfe;
 }
 
 .dsm-api-msg-row-tool {
@@ -4426,7 +4426,7 @@ textarea.dsm-input,
 }
 
 .dsm-api-toast-success {
-  background: #10b981;
+  background: #4d6bfe;
 }
 
 .dsm-api-toast-error {
@@ -4509,8 +4509,8 @@ textarea.dsm-input,
   text-transform: uppercase;
   padding: 1px 5px;
   border-radius: 3px;
-  background: color-mix(in srgb, #10b981 15%, transparent);
-  color: #10b981;
+  background: color-mix(in srgb, #4d6bfe 15%, transparent);
+  color: #4d6bfe;
 }
 
 .dsm-api-status-err {

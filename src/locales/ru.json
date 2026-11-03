@@ -731,7 +731,7 @@
           "features": {
             "feat_0": {
               "title": "Система локализации",
-              "description": "GoodDeepseek теперь поддерживает несколько языков. Помогите нам улучшить переводы или добавить свой язык на <a href='https://github.com/XunowID/GoodDeepseek/blob/main/README.md' target='_blank' style='color: #187663; text-decoration: underline;'>GitHub</a>."
+              "description": "GoodDeepseek теперь поддерживает несколько языков. Помогите нам улучшить переводы или добавить свой язык на <a href='https://github.com/XunowID/GoodDeepseek/blob/main/README.md' target='_blank' style='color: #4d6bfe; text-decoration: underline;'>GitHub</a>."
             },
             "feat_1": {
               "title": "Кастомные промпты",
